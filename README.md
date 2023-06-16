@@ -20,3 +20,7 @@ For getting the compiled executable
 ```
 go build .
 ```
+
+## Showcase
+
+![GIF of the software working](showcase/1.gif)

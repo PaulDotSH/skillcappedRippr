@@ -65,7 +65,7 @@ var (
 )
 
 func UpdateRipInfo() {
-	infoLabel.SetText(fmt.Sprintf("Ripping video %v/%v with ID: %v\nPart %v/???", RipSize, CurrentlyRippin, RipVideoID, CurrentPartID))
+	infoLabel.SetText(fmt.Sprintf("Ripping video %v/%v with ID: %v\nPart %v/???", CurrentlyRippin, RipSize, RipVideoID, CurrentPartID))
 }
 
 func exit() {
@@ -202,7 +202,7 @@ func intLength(nr int) int {
 
 func GetVideoIDfromURL(url string) string {
 	ret := strings.Split(url, "/")
-	return ret[len(ret)-1]
+	return ret[len(ret)-2]
 }
 
 func main() {
